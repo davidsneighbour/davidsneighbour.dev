@@ -1,0 +1,42 @@
+{
+  "username": "davidsneighbour",
+  "defaultDays": 28,
+  "timezone": "Asia/Bangkok",
+  "ownedOwners": [
+    "davidsneighbour"
+  ],
+  "externalOwners": [],
+  "repositories": {
+    "include": [],
+    "exclude": []
+  },
+  "clusterColors": {
+    "davidsneighbour": "#ff5500",
+    "external": "#64748b",
+    "private": "#334155"
+  },
+  "weights": {
+    "pull_request_opened": 5,
+    "issue_opened": 3,
+    "pull_request_review_submitted": 4,
+    "pull_request_review_comment": 1,
+    "issue_comment": 1,
+    "pull_request_merged_bonus": 3
+  },
+  "privacy": {
+    "publishPrivateRepositories": false,
+    "anonymisePrivateRepositories": true
+  },
+  "collector": {
+    "refreshPreviousMonthThroughDay": 3,
+    "requestDelayMs": 350,
+    "maxSearchItems": 1000
+  },
+  "github": {
+    "username": "davidsneighbour",
+    "authorEmails": [
+      "davidsneighbourdev+gh@gmail.com",
+      "83281+davidsneighbour@users.noreply.github.com"
+    ]
+  }
+}

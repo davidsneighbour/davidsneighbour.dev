@@ -1,0 +1,43 @@
+{
+  "name": "@davidsneighbour/github-contribution-graph",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Static GitHub contribution graph site with gh api based collection, monthly cache files, and daily JSONL ledgers.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run data:graph && astro build",
+    "preview": "astro preview",
+    "data:collect": "node src/scripts/collect.ts",
+    "data:graph": "node src/scripts/build-graph.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "astro check && npm run typecheck"
+  },
+  "dependencies": {
+    "@astrojs/check": "latest",
+    "@tailwindcss/vite": "4.2.4",
+    "astro": "6.2.1",
+    "d3": "7.9.0",
+    "tailwindcss": "4.2.4",
+    "typescript": "6.0.3",
+    "zod": "4.4.2"
+  },
+  "devDependencies": {
+    "@types/d3": "7.4.3",
+    "@types/node": "25.6.0"
+  },
+  "engines": {
+    "node": ">=25.0.0",
+    "npm": ">=10.0.0"
+  },
+  "cspell": {
+    "version": "0.2",
+    "language": "en-GB",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [],
+    "ignoreWords": [],
+    "import": []
+  }
+}
