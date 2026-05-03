@@ -20,7 +20,7 @@ interface GraphPayload {
 }
 
 const GRAPH_SELECTOR = '#contribution-graph';
-const GRAPH_DATA_URL = '/data/graph.json';
+const GRAPH_DATA_URL = new URL("data/graph.json", import.meta.env.BASE_URL).toString();
 
 async function loadGraphPayload(url: string): Promise<GraphPayload> {
   const response = await fetch(url);
